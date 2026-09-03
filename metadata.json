@@ -1,6 +1,6 @@
 {
   "name": "Ledger",
-  "description": "Ledger helps entrepreneurs and small businesses manage sales, orders, inventory, cash flow, and profit in one simple platform.",
+  "description": "Ledger — Micro POS & Smart Ledger helping entrepreneurs, social sellers, and small businesses manage sales, inventory, cash flow, and profits. NIC Cohort 9 startup from Quetta in early traction.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
