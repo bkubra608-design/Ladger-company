@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions — Ledger</title>
+    <meta name="description" content="Answers to common questions about Ledger Micro POS, profit calculation, cash flow tracking, AI message parsing, and data privacy." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Top Navigation -->
+    <header class="site-header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="/index.html" class="brand">
+            <span class="brand-mark">◈</span>
+            <div class="brand-details">
+              <span class="brand-name">Ledger</span>
+              <span class="brand-tag">Micro POS · Smart Ledger</span>
+            </div>
+          </a>
+
+          <nav class="desktop-nav" aria-label="Main Navigation">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/product.html" class="nav-link">Product</a>
+            <a href="/features.html" class="nav-link">Features</a>
+            <a href="/how-it-works.html" class="nav-link">How It Works</a>
+            <a href="/pricing.html" class="nav-link">Packages</a>
+            <a href="/about.html" class="nav-link">About</a>
+            <a href="/nic.html" class="nav-link">NIC Journey</a>
+            <a href="/demo.html" class="nav-link">Demo</a>
+            <a href="/contact.html" class="nav-link">Contact</a>
+            <a href="/faq.html" class="nav-link active">FAQ</a>
+          </nav>
+
+          <div class="header-actions">
+            <a href="https://ledger-wfwc.vercel.app" target="_blank" rel="noopener noreferrer" class="btn primary">
+              Open Ledger <span class="btn-arrow">↗</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+              ☰
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+      <div class="mobile-nav-links">
+        <a href="/index.html" class="mobile-nav-link">Home</a>
+        <a href="/product.html" class="mobile-nav-link">Product</a>
+        <a href="/features.html" class="mobile-nav-link">Features</a>
+        <a href="/how-it-works.html" class="mobile-nav-link">How It Works</a>
+        <a href="/pricing.html" class="mobile-nav-link">Packages &amp; Pricing</a>
+        <a href="/about.html" class="mobile-nav-link">About Ledger</a>
+        <a href="/nic.html" class="mobile-nav-link">NIC Startup Journey</a>
+        <a href="/demo.html" class="mobile-nav-link">Interactive Demo</a>
+        <a href="/contact.html" class="mobile-nav-link">Contact &amp; Inquiries</a>
+        <a href="/faq.html" class="mobile-nav-link active">Frequently Asked Questions</a>
+      </div>
+    </div>
+
+    <main>
+      <!-- Page Hero Header -->
+      <section class="section" style="padding-bottom: 40px;">
+        <div class="container">
+          <div class="section-header center">
+            <span class="eyebrow">Clear Answers</span>
+            <h1 class="section-title">Frequently Asked Questions</h1>
+            <p class="section-desc">
+              Everything you need to know about how Ledger works, how it tracks your real profits, and how it protects your business records.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Accordions Section -->
+      <section class="section section-muted">
+        <div class="container" style="max-width: 860px;">
+          <!-- Category 1: General -->
+          <div style="margin-bottom: 40px;">
+            <h2 style="font-size: 22px; margin-bottom: 16px; border-bottom: 2px solid var(--line); padding-bottom: 8px;">
+              1. General Questions
+            </h2>
+            <div class="faq-accordion">
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>What is Ledger and who is it built for?</span>
+                  <span class="faq-chevron">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Ledger is a focused financial and micro-POS application built specifically for small business owners, artisans, home-based entrepreneurs, Instagram/WhatsApp sellers, and retail counters. Unlike bloated enterprise accounting software, Ledger provides direct visibility into your sales, net profit, orders, and inventory in seconds.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>Do I need an accounting or finance degree to use Ledger?</span>
+                  <span class="faq-chevron">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>No. Ledger intentionally avoids double-entry bookkeeping jargon like debits, credits, and balance sheets. If you know what you sold, what it cost you to make or acquire, and how much the customer paid, you have all the knowledge needed to use Ledger.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>Can I use Ledger on my mobile phone or tablet?</span>
+                  <span class="faq-chevron">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Yes. Ledger is designed with a responsive web-first architecture. It functions smoothly on smartphones, tablets, laptops, and desktop browsers without requiring heavy app store downloads.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Product & Features -->
+          <div style="margin-bottom: 40px;">
+            <h2 style="font-size: 22px; margin-bottom: 16px; border-bottom: 2px solid var(--line); padding-bottom: 8px;">
+              2. Product &amp; Features
+            </h2>
+            <div class="faq-accordion">
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>How does Ledger calculate my Net Profit?</span>
+                  <span class="faq-chevron">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Net profit is calculated by subtracting your material/acquisition cost (COGS) from your actual realized sale price on every single transaction: <code>Net Profit = Sale Price − Material Cost</code>. Your percentage profit margin is calculated dynamically so you always know your true take-home earnings.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>How does the AI Message Parser work?</span>
+                  <span class="faq-chevron">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>When customers send unstructured messages on WhatsApp or Instagram (e.g. "Send 2 scented candles to Karachi, recipient Sara 0300..."), you can paste the text directly into Ledger's AI Parser. The engine parses the text, extracts the item, quantity, buyer name, city, and price, and populates the sale form automatically.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>How does Cash Flow and COD tracking work?</span>
+                  <span class="faq-chevron">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Ledger separates your verified cash in hand from pending Cash-on-Delivery (COD) payments still held with courier riders. When parcels are delivered and the courier remits your funds, you simply mark the order completed to reconcile your cash balance.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>Can I print customer receipts?</span>
+                  <span class="faq-chevron">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Yes! Every recorded transaction generates a clean monochrome receipt formatted for standard thermal receipt printers or digital sharing via WhatsApp screenshots.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Pricing & Data -->
+          <div style="margin-bottom: 40px;">
+            <h2 style="font-size: 22px; margin-bottom: 16px; border-bottom: 2px solid var(--line); padding-bottom: 8px;">
+              3. Pricing, Data &amp; Privacy
+            </h2>
+            <div class="faq-accordion">
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>Is Ledger currently free to test?</span>
+                  <span class="faq-chevron">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Yes, Ledger is currently accessible in open public beta at <a href="https://ledger-wfwc.vercel.app" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: var(--ink);">https://ledger-wfwc.vercel.app</a> with zero credit card requirements.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>Where is my business data stored? Can I export it?</span>
+                  <span class="faq-chevron">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>You retain 100% ownership of your business records. You can download a full CSV export of all transactions, customers, and inventory at any time, as well as generate complete JSON backup snapshots to preserve your data safely.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: NIC & Incubation -->
+          <div>
+            <h2 style="font-size: 22px; margin-bottom: 16px; border-bottom: 2px solid var(--line); padding-bottom: 8px;">
+              4. National Incubation Center (NIC)
+            </h2>
+            <div class="faq-accordion">
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>What is Ledger's association with the National Incubation Center (NIC)?</span>
+                  <span class="faq-chevron">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Ledger is part of the startup incubation ecosystem supported by the National Incubation Center (NIC). Incubation provides mentorship, product acceleration, governance reviews, and networking opportunities with regional investors and fintech partners.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pre-footer CTA -->
+      <section class="section">
+        <div class="container">
+          <div class="cta-banner">
+            <h2>Have a Question That Isn't Covered Here?</h2>
+            <p>Our founding team is available to assist and discuss customized business workflows.</p>
+            <div class="btn-group">
+              <a href="/contact.html" class="btn accent lg">
+                Contact the Team ➔
+              </a>
+              <a href="https://ledger-wfwc.vercel.app" target="_blank" rel="noopener noreferrer" class="btn white lg">
+                Open Ledger App ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="/index.html" class="brand">
+              <span class="brand-mark">◈</span>
+              <div class="brand-details">
+                <span class="brand-name">Ledger</span>
+                <span class="brand-tag">Micro POS · Smart Ledger</span>
+              </div>
+            </a>
+            <p class="footer-tagline">
+              Simple financial intelligence for modern businesses. Built for entrepreneurs. Designed for clarity.
+            </p>
+          </div>
+          <div>
+            <h4 class="footer-col-title">Product</h4>
+            <ul class="footer-links">
+              <li><a href="/product.html" class="footer-link">Product Overview</a></li>
+              <li><a href="/features.html" class="footer-link">Features Matrix</a></li>
+              <li><a href="/demo.html" class="footer-link">Interactive Demo</a></li>
+              <li><a href="/how-it-works.html" class="footer-link">How It Works</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-col-title">Company</h4>
+            <ul class="footer-links">
+              <li><a href="/about.html" class="footer-link">About Ledger</a></li>
+              <li><a href="/nic.html" class="footer-link">NIC Startup Journey</a></li>
+              <li><a href="/pricing.html" class="footer-link">Pricing &amp; Packages</a></li>
+              <li><a href="/contact.html" class="footer-link">Contact &amp; Inquiries</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-col-title">Legal</h4>
+            <ul class="footer-links">
+              <li><a href="/privacy.html" class="footer-link">Privacy Policy</a></li>
+              <li><a href="/terms.html" class="footer-link">Terms &amp; Conditions</a></li>
+              <li><a href="/faq.html" class="footer-link">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-col-title">Live App</h4>
+            <a href="https://ledger-wfwc.vercel.app" target="_blank" rel="noopener noreferrer" class="btn primary sm" style="width: 100%; justify-content: center;">
+              Launch Live App ↗
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>© 2026 Ledger. All rights reserved.</div>
+          <div class="footer-statement">Built for entrepreneurs. Designed for clarity.</div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>

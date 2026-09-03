@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Ledger — Inquiries &amp; Partnerships</title>
+    <meta name="description" content="Get in touch with the Ledger team. Reach out for product support, startup inquiries, or incubator and ecosystem partnerships." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Top Navigation -->
+    <header class="site-header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="/index.html" class="brand">
+            <span class="brand-mark">◈</span>
+            <div class="brand-details">
+              <span class="brand-name">Ledger</span>
+              <span class="brand-tag">Micro POS · Smart Ledger</span>
+            </div>
+          </a>
+
+          <nav class="desktop-nav" aria-label="Main Navigation">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/product.html" class="nav-link">Product</a>
+            <a href="/features.html" class="nav-link">Features</a>
+            <a href="/how-it-works.html" class="nav-link">How It Works</a>
+            <a href="/pricing.html" class="nav-link">Packages</a>
+            <a href="/about.html" class="nav-link">About</a>
+            <a href="/nic.html" class="nav-link">NIC Journey</a>
+            <a href="/demo.html" class="nav-link">Demo</a>
+            <a href="/contact.html" class="nav-link active">Contact</a>
+            <a href="/faq.html" class="nav-link">FAQ</a>
+          </nav>
+
+          <div class="header-actions">
+            <a href="https://ledger-wfwc.vercel.app" target="_blank" rel="noopener noreferrer" class="btn primary">
+              Open Ledger <span class="btn-arrow">↗</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+              ☰
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+      <div class="mobile-nav-links">
+        <a href="/index.html" class="mobile-nav-link">Home</a>
+        <a href="/product.html" class="mobile-nav-link">Product</a>
+        <a href="/features.html" class="mobile-nav-link">Features</a>
+        <a href="/how-it-works.html" class="mobile-nav-link">How It Works</a>
+        <a href="/pricing.html" class="mobile-nav-link">Packages &amp; Pricing</a>
+        <a href="/about.html" class="mobile-nav-link">About Ledger</a>
+        <a href="/nic.html" class="mobile-nav-link">NIC Startup Journey</a>
+        <a href="/demo.html" class="mobile-nav-link">Interactive Demo</a>
+        <a href="/contact.html" class="mobile-nav-link active">Contact &amp; Inquiries</a>
+        <a href="/faq.html" class="mobile-nav-link">Frequently Asked Questions</a>
+      </div>
+    </div>
+
+    <main>
+      <!-- Page Hero Header -->
+      <section class="section" style="padding-bottom: 40px;">
+        <div class="container">
+          <div class="section-header center">
+            <span class="eyebrow">Direct Line</span>
+            <h1 class="section-title">We'd Love to Hear From You</h1>
+            <p class="section-desc">
+              Whether you are a merchant with product feedback, a prospective incubator partner, or an entrepreneur looking to simplify your cash flow, drop us a note.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Grid -->
+      <section class="section section-muted">
+        <div class="container">
+          <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: flex-start;">
+            <!-- Contact Form -->
+            <div class="panel" style="margin: 0;">
+              <h2 style="font-size: 24px; margin-bottom: 8px;">Send a Message</h2>
+              <p style="font-size: 14px; color: var(--muted); margin-bottom: 24px;">
+                Our founding team reviews all inquiries within 24–48 hours.
+              </p>
+
+              <form id="contactForm" novalidate>
+                <div class="form-row" style="margin-bottom: 16px;">
+                  <div>
+                    <label class="form-label" for="contactName">Your Name *</label>
+                    <input type="text" id="contactName" class="form-input" placeholder="e.g. Sara Ahmed" required />
+                  </div>
+                  <div>
+                    <label class="form-label" for="contactEmail">Email Address *</label>
+                    <input type="email" id="contactEmail" class="form-input" placeholder="you@yourbrand.com" required />
+                  </div>
+                </div>
+
+                <div class="form-row" style="margin-bottom: 16px;">
+                  <div>
+                    <label class="form-label" for="contactBusiness">Business / Brand Name</label>
+                    <input type="text" id="contactBusiness" class="form-input" placeholder="e.g. Artisan Candles Co." />
+                  </div>
+                  <div>
+                    <label class="form-label" for="contactType">Inquiry Purpose</label>
+                    <select id="contactType" class="form-select">
+                      <option>General Question</option>
+                      <option>Feature Feedback / Request</option>
+                      <option>Incubation / Investor Inquiry</option>
+                      <option>Courier / Logistics Integration</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                  <label class="form-label" for="contactMessage">Your Message *</label>
+                  <textarea id="contactMessage" class="form-textarea" rows="5" placeholder="Tell us how we can help or what you would love to see in Ledger..." required></textarea>
+                </div>
+
+                <div id="contactFormSuccess" class="form-success" style="display: none; margin-bottom: 16px;">
+                  ✓ Thank you! Your message has been received. Our team will get back to you shortly.
+                </div>
+
+                <button type="submit" class="btn primary lg" style="width: 100%;">
+                  Send Message ➔
+                </button>
+              </form>
+            </div>
+
+            <!-- Information Cards -->
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+              <div class="panel" style="margin: 0; padding: 24px;">
+                <span class="eyebrow">Product Inquiries</span>
+                <h3 style="font-size: 18px; margin: 4px 0 10px;">General &amp; User Support</h3>
+                <p style="font-size: 14px; color: var(--ink-soft); line-height: 1.6; margin: 0 0 10px;">
+                  Have questions about using Ledger for your shop or need guidance setting up inventory?
+                </p>
+                <div style="font-size: 14px; font-weight: 500;">
+                  Email: <span class="placeholder-tag">[Add Contact Email, e.g. hello@ledgerapp.com]</span>
+                </div>
+              </div>
+
+              <div class="panel" style="margin: 0; padding: 24px;">
+                <span class="eyebrow">Incubation &amp; Startup</span>
+                <h3 style="font-size: 18px; margin: 4px 0 10px;">National Incubation Center (NIC)</h3>
+                <p style="font-size: 14px; color: var(--ink-soft); line-height: 1.6; margin: 0 0 10px;">
+                  Ledger is incubated at the National Incubation Center ecosystem.
+                </p>
+                <div style="font-size: 14px; font-weight: 500;">
+                  Location: <span class="placeholder-tag">[Add City / NIC Campus Address]</span>
+                </div>
+              </div>
+
+              <div class="panel" style="margin: 0; padding: 24px; background: var(--dark); color: #fff;">
+                <span class="eyebrow" style="color: var(--accent);">Direct Access</span>
+                <h3 style="font-size: 18px; margin: 4px 0 10px; color: #fff;">Test the Software Right Now</h3>
+                <p style="font-size: 14px; color: rgba(255,255,255,0.75); line-height: 1.6; margin: 0 0 16px;">
+                  You do not need to wait for an email response to test Ledger. The full web app is open to explore.
+                </p>
+                <a href="https://ledger-wfwc.vercel.app" target="_blank" rel="noopener noreferrer" class="btn accent sm" style="width: 100%; justify-content: center;">
+                  Open Live Ledger App ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="/index.html" class="brand">
+              <span class="brand-mark">◈</span>
+              <div class="brand-details">
+                <span class="brand-name">Ledger</span>
+                <span class="brand-tag">Micro POS · Smart Ledger</span>
+              </div>
+            </a>
+            <p class="footer-tagline">
+              Simple financial intelligence for modern businesses. Built for entrepreneurs. Designed for clarity.
+            </p>
+          </div>
+          <div>
+            <h4 class="footer-col-title">Product</h4>
+            <ul class="footer-links">
+              <li><a href="/product.html" class="footer-link">Product Overview</a></li>
+              <li><a href="/features.html" class="footer-link">Features Matrix</a></li>
+              <li><a href="/demo.html" class="footer-link">Interactive Demo</a></li>
+              <li><a href="/how-it-works.html" class="footer-link">How It Works</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-col-title">Company</h4>
+            <ul class="footer-links">
+              <li><a href="/about.html" class="footer-link">About Ledger</a></li>
+              <li><a href="/nic.html" class="footer-link">NIC Startup Journey</a></li>
+              <li><a href="/pricing.html" class="footer-link">Pricing &amp; Packages</a></li>
+              <li><a href="/contact.html" class="footer-link">Contact &amp; Inquiries</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-col-title">Legal</h4>
+            <ul class="footer-links">
+              <li><a href="/privacy.html" class="footer-link">Privacy Policy</a></li>
+              <li><a href="/terms.html" class="footer-link">Terms &amp; Conditions</a></li>
+              <li><a href="/faq.html" class="footer-link">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-col-title">Live App</h4>
+            <a href="https://ledger-wfwc.vercel.app" target="_blank" rel="noopener noreferrer" class="btn primary sm" style="width: 100%; justify-content: center;">
+              Launch Live App ↗
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>© 2026 Ledger. All rights reserved.</div>
+          <div class="footer-statement">Built for entrepreneurs. Designed for clarity.</div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
